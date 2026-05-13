@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio Services</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #38bdf8;
+            --border: #334155;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1000px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 24px;
+            text-align: center;
+            letter-spacing: -0.025em;
+        }
+
+        h2 span {
+            color: var(--accent);
+        }
+
+        .table-wrapper {
+            overflow-x: auto;
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+            font-size: 0.95rem;
+        }
+
+        th {
+            background-color: #111827;
+            color: var(--accent);
+            padding: 16px;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            letter-spacing: 0.05em;
+            border-bottom: 1px solid var(--border);
+        }
+
+        td {
+            padding: 16px;
+            border-bottom: 1px solid var(--border);
+            vertical-align: top;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        tr:hover {
+            background-color: #24334d;
+        }
+
+        .service-name {
+            font-weight: 600;
+            color: var(--text-main);
+        }
+
+        .description {
+            color: var(--text-muted);
+            line-height: 1.5;
+        }
+
+        .tech-badge {
+            display: inline-block;
+            background-color: #0f172a;
+            color: var(--accent);
+            padding: 4px 8px;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            margin: 2px;
+            border: 1px solid var(--border);
+        }
+
+        .delivery {
+            font-weight: 500;
+            color: #34d399;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>My Portfolio <span>Services</span></h2>
+    
+    <div class="table-wrapper">
+        <table>
+            <thead>
+                <tr>
+                    <th style="width: 25%;">Service</th>
+                    <th style="width: 45%;">Description</th>
+                    <th style="width: 20%;">Tools & Technologies</th>
+                    <th style="width: 10%;">Delivery</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="service-name">Frontend Web Development</td>
+                    <td class="description">Building responsive, high-performance, and interactive user interfaces matching modern UI/UX design standards.</td>
+                    <td>
+                        <span class="tech-badge">HTML5</span>
+                        <span class="tech-badge">CSS3</span>
+                        <span class="tech-badge">React</span>
+                        <span class="tech-badge">Tailwind</span>
+                    </td>
+                    <td class="delivery">5-7 Days</td>
+                </tr>
+                <tr>
+                    <td class="service-name">Backend API Development</td>
+                    <td class="description">Designing secure, scalable server architectures, RESTful APIs, and database management solutions.</td>
+                    <td>
+                        <span class="tech-badge">Node.js</span>
+                        <span class="tech-badge">Express</span>
+                        <span class="tech-badge">MongoDB</span>
+                        <span class="tech-badge">SQL</span>
+                    </td>
+                    <td class="delivery">7-14 Days</td>
+                </tr>
+                <tr>
+                    <td class="service-name">UI/UX Interface Design</td>
+                    <td class="description">Creating interactive wireframes, user flow diagrams, and high-fidelity visual prototypes for mobile and web apps.</td>
+                    <td>
+                        <span class="tech-badge">Figma</span>
+                        <span class="tech-badge">Adobe XD</span>
+                        <span class="tech-badge">Prototyping</span>
+                    </td>
+                    <td class="delivery">3-5 Days</td>
+                </tr>
+                <tr>
+                    <td class="service-name">Version Control & Git Setup</td>
+                    <td class="description">Structuring clean repository workflows, branch management architectures, and resolving complex code merge conflicts.</td>
+                    <td>
+                        <span class="tech-badge">Git</span>
+                        <span class="tech-badge">GitHub</span>
+                        <span class="tech-badge">GitLab</span>
+                        <span class="tech-badge">CI/CD</span>
+                    </td>
+                    <td class="delivery">1-2 Days</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+</body>
+</html>
